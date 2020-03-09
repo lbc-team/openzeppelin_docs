@@ -22,7 +22,22 @@ module.exports = {
       { text: "问答", link: "https://learnblockchain.cn/questions" }
     ],
     sidebar: {
-
+      '/contracts/':[
+        '',
+        'accesscontrol.md',
+        {
+          title: "Tokens",
+          collapsable: true,
+          children: [
+            "tokens/tokens.md",
+            "tokens/ERC20/erc20.md",
+            "tokens/ERC20/createsupply.md",
+            "tokens/ERC20/crowdsales.md",
+            "tokens/ERC721.md",
+            "tokens/ERC777.md",
+          ]
+        }
+      ],
       '/cli/': [
         '',
         "start.md",
@@ -45,6 +60,8 @@ module.exports = {
 
        '/': [
         '',
+        'contracts/',
+        'cli/'
       ]
 
     }
