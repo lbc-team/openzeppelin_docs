@@ -3,7 +3,7 @@ module.exports = {
   description: "OpenZeppelin 中文文档",
   ga: "",
   dest: "./dist/docs",
-  base: "/docs/openzeppelin/",
+  base: "/docs/oz/",
   markdown: {
     lineNumbers: true
   },
@@ -53,7 +53,7 @@ module.exports = {
           children: [
             "api/commands.md",
             "api/configs.md",
-            "api/architure.md",
+            "api/architecture.md",
           ]
         }
       ],
@@ -78,7 +78,9 @@ module.exports = {
        '/': [
         '',
         'contracts/',
-        'cli/'
+        'cli/',
+        'starter-kits/',
+        'upgrades/'
       ]
 
     }

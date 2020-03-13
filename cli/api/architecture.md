@@ -4,9 +4,8 @@ Features such as contract upgrades and Ethereum Package linking involve interact
 
 The following sections describe the contract achitecture behind both upgrades and Ethereum Packages.
 
-|      | Most of these contracts are actually part of [**OpenZeppelin Upgrades**](https://docs.openzeppelin.com/upgrades/2.7/), which the CLI uses. |
-| ---- | ------------------------------------------------------------ |
-|      |                                                              |
+>  Most of these contracts are actually part of [**OpenZeppelin Upgrades**](https://docs.openzeppelin.com/upgrades/2.7/), which the CLI uses.
+
 
 ## Upgrades
 
@@ -38,9 +37,7 @@ To instead transfer the whole project, just provide the new admin address:
 $ npx oz set-admin [NEW_ADMIN_ADDRESS]
 ```
 
-|      | `oz set-admin` is an interactive command: you can also run it with no arguments and it will prompt you for data as it proceeds. |
-| ---- | ------------------------------------------------------------ |
-|      |                                                              |
+> `oz set-admin` is an interactive command: you can also run it with no arguments and it will prompt you for data as it proceeds.
 
 #### Contract Upgrades via `ProxyAdmin`
 
@@ -91,9 +88,7 @@ When you upgrade one of your application’s smart contracts, it is your applica
 
 An Ethereum Package is defined by the `Package` contract, as we’ll see next.
 
-|      | Additionally the `App` contract also facilitates the creation of proxies, by conveniently wrapping around the `AdminUpgradeabilityProxy` contract. |
-| ---- | ------------------------------------------------------------ |
-|      |                                                              |
+> Additionally the `App` contract also facilitates the creation of proxies, by conveniently wrapping around the `AdminUpgradeabilityProxy` contract.
 
 You can read its source code [here](https://github.com/OpenZeppelin/openzeppelin-sdk/blob/v2.6.0/packages/lib/contracts/application/App.sol).
 
