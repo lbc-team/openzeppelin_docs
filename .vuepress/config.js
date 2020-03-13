@@ -57,7 +57,24 @@ module.exports = {
           ]
         }
       ],
-
+      '/starter-kits/': [
+        '',
+        {
+          title: "Kits",
+          collapsable: true,
+          children: [
+            "list/list.md",
+            "list/starter.md",
+            "list/tutorial.md",
+            "list/gsn.md",
+          ]
+        },
+        "howcreate.md"
+      ],
+      '/upgrades/': [
+        '',
+        'api.md',
+      ],
        '/': [
         '',
         'contracts/',
